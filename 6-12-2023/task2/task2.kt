@@ -19,9 +19,7 @@ fun findNumberOfSpeedSolutions(timeDistancePair: Pair<Long,Long>): Long {
 fun findSolution(input: MutableList<String>): Long {
     var time = input[0].split(": ")[1].trim().replace(" ", "").toLong()
     var distanceRecord = input[1].split(": ")[1].trim().replace(" ", "").toLong()
-
-    println(time)
-    println(distanceRecord)
+    
     return findNumberOfSpeedSolutions(Pair(time, distanceRecord))
 }
 
