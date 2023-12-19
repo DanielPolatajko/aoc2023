@@ -16,4 +16,9 @@ run-day:
 	echo "Running task 1 example"
 	java -jar $(day)/task1/task1.jar $(day)/task1/example.txt
 	echo "Running task 1 input"
+	java -jar $(day)/task1/task1.jar $(day)/task1/input.txt
+
+	echo "Running task 2 example"
 	java -jar $(day)/task2/task2.jar $(day)/task2/example.txt
+	echo "Running task 2 input"
+	java -jar $(day)/task2/task2.jar $(day)/task2/input.txt
