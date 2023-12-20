@@ -1,12 +1,12 @@
 build-task:
-	kotlinc $(day)/task$(problem)/task$(problem).kt -include-runtime -d $(day)/task$(problem)/task$(problem).jar 
+	kotlinc $(day)/task$(task)/task$(task).kt -include-runtime -d $(day)/task$(task)/task$(task).jar 
 
 build-day:
-	make build-task day=$(day) problem=1
-	make build-task day=$(day) problem=2
+	make build-task day=$(day) task=1
+	make build-task day=$(day) task=2
 
 run-task:
-	java -jar $(day)/task$(problem)/task$(problem).jar $(day)/task$(problem)/$(file)
+	java -jar $(day)/task$(task)/task$(task).jar $(day)/task$(task)/$(file)
 
 run-day:
 	java -jar $(day)/task1/task1.jar $(day)/task1/example.txt
